@@ -8,6 +8,7 @@ def line(katz_deli)
     str_to_build = ""
     init_str = "The line is currently: "
     counter = 0 
+    
     while counter < katz_deli.size
       if counter < katz_deli.size - 1 
         str_to_build = str_to_build + "#{counter+1}. #{katz_deli[counter]} "
@@ -16,6 +17,7 @@ def line(katz_deli)
       end
       counter += 1
     end
+    
     puts init_str + str_to_build
   end
 end
@@ -33,5 +35,6 @@ def now_serving(katz_deli)
   end
 end
 
+line(['Mickey','Peter','Mike', 'Davy', 'Joe'])
 
 #dlfjlksdfsjsdfhfsd
